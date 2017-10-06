@@ -17,7 +17,6 @@ class AboutExtractors extends KoanSuite {
     result should be(__)
   }
 
-
   koan(
     """What's an extractor? In Scala it's a method in any `object` called `unapply`, and that method
       | is used to disassemble the object given by returning a tuple wrapped in an option. Extractors can be used

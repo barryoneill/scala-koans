@@ -1,9 +1,9 @@
 package org.functionalkoans.forscala
 
-import org.scalatest.matchers.ShouldMatchers
+
 import support.KoanSuite
 
-class AboutLiteralStrings extends KoanSuite with ShouldMatchers {
+class AboutLiteralStrings extends KoanSuite  {
 
   koan("Character Literals are quoted with single quotes") {
     val a = 'a'
@@ -39,7 +39,7 @@ class AboutLiteralStrings extends KoanSuite with ShouldMatchers {
   }
 
   koan("String Literals can contain escape sequences.") {
-    val a = "An \141pple \141 d\141y keeps the doctor \141w\141y"
+    val a = "An \u0061pple \u0061 d\u0061y keeps the doctor \u0061w\u0061y"
     a should be(__)
   }
 

@@ -54,4 +54,10 @@ class AboutValAndVar extends KoanSuite {
     a should be (__)
     history should be(__)
   }
+
+  koan("You can initialize two values in the same line") {
+    val (x,y) = (1, 2)
+    x should be (__)
+    y should be (__)
+  }
 }

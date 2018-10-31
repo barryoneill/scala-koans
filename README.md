@@ -6,6 +6,8 @@ The versions of scala and scalatest that they use are a little outdated. This pr
 the more current versions of those, and removes all the custom bootstrap code that 
 is now incompatible and unnecessary (IMHO) for running the tests.
 
+Some more koans have been added so maybe do you prefer this koans for that reason too.
+
 ## Getting Started
 To get started (and assuming you have sbt installed), open a terminal to the root of this project and run:
     

@@ -30,6 +30,23 @@ class AboutLists extends KoanSuite {
     (a eq b) should be(__)
   }
 
+  koan("List are compared by identity, but two Nil list are same identity so do not confuse with reference") {
+    var a = List(1, 2, 3)
+    var b = List(1, 2, 3)
+    (a eq b) should be(__)
+
+    a = Nil
+    b = Nil
+    (a eq b) should be(__)
+  }
+
+  koan("Equal in testing is not the same as eq") {
+    val a = List(1, 2, 3)
+    val b = List(1, 2, 3)
+    (a eq b) should be(__)
+    a should equal(__)
+  }
+
   koan("Lists are easily created") {
     val a = List(1, 2, 3)
     a should equal(List(__, __, __))
